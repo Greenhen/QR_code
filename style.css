@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root{
+    --lightgray:hsl(212, 45%, 89%);
+    --Grayishblue:hsl(220, 15%, 55%);
+    --Darkblue:hsl(218, 44%, 22%);
+}
+
+*{
+    box-sizing: border-box;
+    font-family:'Outfit', sans-serif;
+    margin: 0;
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgray);
+
+}
+p{
+    font-size: 15px;
+    color: var(--Grayishblue);
+    margin-bottom: 10%;
+}
+h2{
+    color: var(--Darkblue);
+    margin-bottom: 5%;
+}
+.qr_card{
+    text-align: center;
+    background-color: white;
+    padding: 1%;
+    border-radius: 5%;
+    margin:9%;
+    width: 20%;
+}
+img{
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 3%;
+}
+
+h2 ,p{
+    margin-left:10%;
+    margin-right:10% ;
+}
+
+
+/*extra kis kijelző (max 600px-ig és az alatt)*/
+@media only screen and (max-width: 600px) {
+    .qr_card{
+       width: 70%;
+       padding: 5%;
+    }
+    h2{
+        font-size: 15px;
+        margin-left:5%;
+        margin-right:5% 
+    }
+    p{
+        font-size: 10px;
+        margin-left:5%;
+        margin-right:5% 
+    }
+}
+
+
+
+
